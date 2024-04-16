@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify 로그인</title>
+    <link rel="stylesheet" href="loginIndex.css">
+</head>
+<body>
+    <div class="toolbar">
+        <img src="./images/Spotify Logo.png" alt="Spotify Logo">
+    </div>
+    <div class="login-container">
+        <div class="login-form">
+            <h1>Spotify에 로그인하기</h1>
+            <div class="login-buttons">
+                <button class="login-button google">
+                    <img src="./images/icons-google-text-logo-google-logo-thumbnail.png" alt="Google 로고">
+                    Google+ 계정으로
+                </button>
+                <button class="login-button facebook">
+                    <img src="./images/FACEBOOKLOGO.JPEG" alt="Facebook 로고">
+                    Facebook으로 계속하기
+                </button>
+                <button class="login-button apple">
+                    <img src="./images/apple_logo_icon_147318.png" alt="Apple 로고">
+                    Apple로 계속하기
+                </button>
+            </div>
+            <div class="divider">
+                <span>또는</span>
+            </div>
+            <form action="" method="post">
+                <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder="이메일 주소" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" name="password" placeholder="비밀번호" required>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="keep-signed-in" name="keep-signed-in">
+                    <label for="keep-signed-in">내 정보 기억하기</label>
+                </div>
+                <button type="submit" class="login-button">로그인하기</button>
+            </form>
+            <p>비밀번호를 잊으셨나요?</p>
+        </div>
+    </div>
+</body>
+</html>

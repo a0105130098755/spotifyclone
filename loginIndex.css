@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #2a2c2b, #191414);
+    background-attachment: fixed;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.logo {
+    margin-bottom: 30px;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: #181717;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    text-align: center;
+}
+.login-button:hover {
+    background-color: #333; 
+    border-color: #ccc; 
+}
+
+input[type="email"]:hover,
+input[type="password"]:hover {
+    background-color: #444; 
+}
+
+
+p:hover {
+    color: #fff; 
+}
+
+h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.login-buttons {
+    margin-bottom: 30px;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.login-button.google {
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+
+.login-button.facebook {
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+
+.login-button.apple {
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+.login-button.google:hover {
+    background-color: #333; 
+    border-color: #fff; 
+}
+
+
+.login-button.facebook:hover {
+    background-color: #333; 
+    border-color: #fff; 
+}
+
+.login-button.apple:hover {
+    background-color: #333; 
+    border-color: #fff; 
+}
+
+.divider {
+    position: relative;
+    margin: 30px 0;
+    color: #fff;
+}
+
+.divider span {
+    display: inline-block;
+    padding: 0 10px;
+    background-color: #000;
+    position: relative;
+    z-index: 1;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #fff;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.login-button[type="submit"] {
+    background-color: #1DB954;
+    margin-top: 20px;
+}
+.login-button[type="submit"]:hover {
+    background-color: #22e065; 
+}
+p {
+    color: #b3b3b3;
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    body {
+        /* background-image: none; Remove this line to keep the background image */
+        background-color: #191414; /* Adjusted to provide a fallback color */
+    }
+    
+    .logo {
+        display: none;
+    }
+    
+    .login-container {
+        box-shadow: none;
+        padding: 20px;
+    }
+}
+.toolbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* 이미지를 왼쪽으로 정렬 */
+    padding: 10px 20px; /* 좌우 패딩 추가 */
+    background-color: #181717;
+    position: fixed; /* 툴바를 상단에 고정 */
+    top: 0; /* 상단에서의 위치 */
+    z-index: 1000; /* 다른 요소들 위에 오도록 z-index 설정 */
+}
+
+.toolbar img {
+    width: 150px; /* 기본 이미지 크기 */
+}
+
+@media screen and (max-width: 768px) {
+    .toolbar {
+        justify-content: center; /* 모바일에서는 이미지를 가운데로 정렬 */
+    }
+
+    .toolbar img {
+        width: 100px; /* 모바일에서의 이미지 크기 조절 */
+    }
+
+    .login-container {
+        padding: 20px;
+        margin-top: 60px; /* 툴바에 의해 가려지지 않도록 로그인 컨테이너의 상단 마진 조절 */
+    }
+}
